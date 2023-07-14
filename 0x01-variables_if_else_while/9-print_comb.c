@@ -10,7 +10,6 @@
 int main(void)
 {
 	int c = 0;
-	char a = 'a';
 
 	for ( ; c < 10 ; c++)
 	{
