@@ -10,7 +10,7 @@
 int main(void)
 {
 	int c = 0;
-	int d = 1;
+	int d = c + 1;
 
 	for ( ; c < 9 ; c++)
 	{
