@@ -19,7 +19,7 @@ int main(void)
 
 	for ( ; cc <= 'Z' ; cc++)
 	{
-		putchat(cc);
+		putchar(cc);
 	}
 	putchar('\n');
 	return (0);
