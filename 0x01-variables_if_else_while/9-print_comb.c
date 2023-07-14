@@ -14,8 +14,11 @@ int main(void)
 	for ( ; c < 10 ; c++)
 	{
 		putchar(c + 48);
-		putchar(' ');
-		putchar(',');
+		if (c < 9)
+		{
+			putchar(' ');
+                	putchar(',');
+		}
 	}
 	putchar('\n');
 	return (0);
