@@ -15,32 +15,28 @@ void times_table(void)
 
 		while (mi < 10)
 		{
-			if (hrs * mi < 10)
+			if (mi == 0)
 			{
 				_putchar('0' + hrs * mi);
+			}
+			else if (hrs * mi < 10)
+			{
+				_putchar(' ');
+				_putchar('0' + (hrs * mi));
 			}
 			else
 			{
 				_putchar('0' + (hrs * mi) / 10);
 				_putchar('0' + (hrs * mi) % 10);
 			}
-			if (mi == 9)
-				_putchar('\n');
-			else
+			if (mi < 9)
 			{
 				_putchar(',');
 				_putchar(' ');
-				if (hrs * mi < 10)
-				{
-					_putchar(' ');
-					if ((hrs+1) * mi >=10)
-					{
-						_putchar(' ');
-					}
-				}
 			}
 			mi++;
 		}
+		_putchar('\n');
 		hrs++;
 	}
 }
