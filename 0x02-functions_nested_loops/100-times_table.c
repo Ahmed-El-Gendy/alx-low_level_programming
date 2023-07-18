@@ -7,21 +7,16 @@
 
 void print_times_table(int n)
 {
-	int hrs = 0;
+	int hrs = 0, mi;
 
 	if (n < 15 || n < 0)
 		return;
-
 	while (hrs <= n)
 	{
-		int mi = 0;
-
-		while (mi <= n)
+		for (mi = 0; mi <= n; mi++)
 		{
 			if (mi == 0)
-			{
 				_putchar('0' + hrs * mi);
-			}
 			else if (hrs * mi < 10)
 			{
 				_putchar(' ');
