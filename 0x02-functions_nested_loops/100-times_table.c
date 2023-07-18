@@ -11,6 +11,7 @@ void print_times_table(int n)
 
 	if (n > 15 || n < 0)
 		return;
+
 	while (hrs <= n)
 	{
 		for (mi = 0; mi <= n; mi++)
@@ -40,7 +41,6 @@ void print_times_table(int n)
 				_putchar(',');
 				_putchar(' ');
 			}
-			mi++;
 		}
 		_putchar('\n');
 		hrs++;
