@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - main
- * Description: fib first 90
+ * Description: fib first 100
  * Return: 0
  */
 int main(void)
