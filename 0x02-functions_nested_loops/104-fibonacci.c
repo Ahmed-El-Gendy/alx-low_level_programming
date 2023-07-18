@@ -14,7 +14,7 @@ int main(void)
 
 		n = m;
 		m = temp + tem;
-		printf("%ul", m);
+		printf("%lu", m);
 		if (x <= 89)
 			printf(", ");
 	}
