@@ -9,6 +9,7 @@ void print_times_table(int n)
 {
 	if (n < 15 || n < 0)
 		return;
+
 	int hrs = 0;
 
 	while (hrs <= n)
@@ -35,7 +36,7 @@ void print_times_table(int n)
 			}
 			else
 			{
-				_putchar('0' + rep / 100);
+				_putchar('0' + (hrs * mi) / 100);
 				_putchar('0' + (hrs * mi - 100) / 10);
 				_putchar('0' + (hrs * mi) % 100);
 			}
