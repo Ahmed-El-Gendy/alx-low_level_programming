@@ -1,0 +1,52 @@
+#include "main.h"
+/**
+ * print_times_table - table
+ *@n : the num
+ * Return: null
+ */
+
+void print_times_table(int n)
+{
+	if (n < 15 || n < 0)
+		return;
+	int hrs = 0;
+
+	while (hrs <= n)
+	{
+		int mi = 0;
+
+		while (mi <= n)
+		{
+			if (mi == 0)
+			{
+				_putchar('0' + hrs * mi);
+			}
+			else if (hrs * mi < 10)
+			{
+				_putchar(' ');
+				_putchar(' ');
+				_putchar('0' + (hrs * mi));
+			}
+			else if (hrs * mi < 100)
+			{
+				_putchar(' ');
+				_putchar('0' + (hrs * mi) / 10);
+				_putchar('0' + (hrs * mi) % 10);
+			}
+			else
+			{
+				_putchar('0' + rep / 100);
+				_putchar('0' + (hrs * mi - 100) / 10);
+				_putchar('0' + (hrs * mi) % 100);
+			}
+			if (mi < 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
+			mi++;
+		}
+		_putchar('\n');
+		hrs++;
+	}
+}
