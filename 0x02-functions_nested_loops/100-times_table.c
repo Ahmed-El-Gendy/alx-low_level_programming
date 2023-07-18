@@ -16,7 +16,7 @@ void print_times_table(int n)
 	{
 		for (mi = 0; mi <= n; mi++)
 		{
-			s = a * b;
+			s = hrs * mi;
 			if (mi == 0)
 				_putchar('0' + s);
 			else if (s < 10)
