@@ -7,43 +7,43 @@
 
 void print_times_table(int n)
 {
-	int hrs = 0, mi,s;
 
-	if (n > 15 || n < 0)
-		return;
+int a = 0, rep, b;
 
-	while (hrs <= n)
+if (n < 0 || n > 15)
+	return;
+while (a <= n)
+{
+	for (b = 0; b <= n; b++)
 	{
-		for (mi = 0; mi <= n; mi++)
+		re = a * b;
+		if (b == 0)
+			_putchar('0' + re);
+		else if (re < 10)
 		{
-			s = hrs * mi;
-			if (mi == 0)
-				_putchar('0' + s);
-			else if (s < 10)
-			{
-				_putchar(' ');
-				_putchar(' ');
-				_putchar('0' + s);
-			}
-			else if (s < 100)
-			{
-				_putchar(' ');
-				_putchar('0' + s / 10);
-				_putchar('0' + s % 10);
-			}
-			else
-			{
-				_putchar('0' + (s / 100));
-				_putchar('0' + (( - 100) / 10));
-				_putchar('0' + (s % 100));
-			}
-			if (mi < n)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
+			_putchar(' ');
+			_putchar(' ');
+			_putchar('0' + re);
 		}
-		_putchar('\n');
-		hrs++;
+		else if (rep < 100)
+		{
+			_putchar(' ');
+			_putchar('0' + re / 10);
+			_putchar('0' + re % 10);
+		}
+		else
+		{
+			_putchar('0' + re / 100);
+			_putchar('0' + (re - 100) / 10);
+			_putchar('0' + re % 10);
+		}
+		if (b < n)
+		{
+			_putchar(',');
+			_putchar(' ');
+		}
 	}
+	_putchar('\n');
+	a++;
+}
 }
