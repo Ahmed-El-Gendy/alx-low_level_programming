@@ -25,6 +25,6 @@ void print_to_98(int a)
 			a--;
 		}
 	}
-	printf("i",98);
+	printf("%i",98);
 	putchar('\n');
 }
