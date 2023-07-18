@@ -1,4 +1,5 @@
 #include "main.h"
+#intclude < stdio.h >
 /**
  * print_to_98 - add
  *@a : the first num
@@ -8,22 +9,21 @@
 
 void print_to_98(int a)
 {
-	while (a <= 98)
+	if (a > 98)
 	{
-		if (a < 10)
+		while (a <= 98)
 		{
-			_putchar('0' + a);
+			printf("%i, ", a);
+			a++;
 		}
-		else
-		{
-			_putchar('0' + (a / 10));
-			_putchar('0' + (a % 10));
-		}
-		if (a < 98)
-		{
-			_putchar(',');
-			_putchar(' ');
-		}
-		a++;
 	}
+	else
+	{
+		while (a >= 98)
+		{
+			printf("%i, ", a);
+			a--;
+		}
+	}
+	putchar('\n');
 }
