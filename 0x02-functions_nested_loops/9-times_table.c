@@ -33,6 +33,10 @@ void times_table(void)
 				if (hrs * mi < 10)
 				{
 					_putchar(' ');
+					if ((hrs+1) * mi >=10)
+					{
+						-putchar(' ');
+					}
 				}
 			}
 			mi++;
