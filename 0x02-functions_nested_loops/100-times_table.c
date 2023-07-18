@@ -36,7 +36,7 @@ void print_times_table(int n)
 				_putchar('0' + ((hrs * mi) - 100) / 10);
 				_putchar('0' + (hrs * mi) % 100);
 			}
-			if (mi < 9)
+			if (mi < n)
 			{
 				_putchar(',');
 				_putchar(' ');
