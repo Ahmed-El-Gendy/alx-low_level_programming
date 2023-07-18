@@ -32,9 +32,9 @@ void print_times_table(int n)
 			}
 			else
 			{
-				_putchar('0' + (hrs * mi) / 100);
-				_putchar('0' + ((hrs * mi) - 100) / 10);
-				_putchar('0' + (hrs * mi) % 100);
+				_putchar('0' + ((hrs * mi) / 100));
+				_putchar('0' + (((hrs * mi) - 100) / 10));
+				_putchar('0' + ((hrs * mi) % 100));
 			}
 			if (mi < n)
 			{
