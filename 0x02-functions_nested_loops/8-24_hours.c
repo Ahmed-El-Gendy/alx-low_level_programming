@@ -14,12 +14,12 @@ void jack_bauer(void)
 		_putchar(hrs / 10);
 		_putchar(hrs % 10);
 		hrs++;
-		int min = 0;
+		int mi = 0;
 
-		while (min < 60)
+		while (mi < 60)
 		{
-			_putchar(min / 10);
-			_putchar(min % 10);
+			_putchar(mi / 10);
+			_putchar(mi % 10);
 			min++;
 		}
 	}
