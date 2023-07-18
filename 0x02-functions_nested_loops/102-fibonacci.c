@@ -7,7 +7,7 @@
 int main(void)
 {
 	long n=0, m=1, x;
-	printf("%i, %i, ",n, m);
+	printf("%lu, %lu, ",n, m);
 	for(x = 1; x <= 50; x++)
 	{
 		long temp = n, tem = m;
