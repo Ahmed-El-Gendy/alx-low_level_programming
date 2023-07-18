@@ -7,14 +7,16 @@
 int main(void)
 {
 	long n=0, m=1, x;
+
 	printf("%lu, %lu, ",n, m);
 	for(x = 1; x <= 50; x++)
 	{
 		long temp = n, tem = m;
+
 		n = m;
 		m = temp + tem;
 		printf("%lu", m);
-		if(x < 49)
+		if(x <= 49)
 			printf(", ");
 	}
 	printf("\n");
