@@ -1,5 +1,5 @@
 #include "main.h"
-#intclude < stdio.h >
+#include < stdio.h >
 /**
  * print_to_98 - add
  *@a : the first num
