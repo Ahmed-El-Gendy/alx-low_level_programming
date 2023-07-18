@@ -21,5 +21,6 @@ void print_to_98(int a)
 		}
 		_putchar(',');
 		_putchar(' ');
+		a++;
 	}
 }
