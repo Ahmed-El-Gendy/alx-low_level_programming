@@ -19,8 +19,11 @@ void print_to_98(int a)
 			_putchar('0' + (a / 10));
 			_putchar('0' + (a % 10));
 		}
-		_putchar(',');
-		_putchar(' ');
-		a++;
+		if (a < 98)
+		{
+			_putchar(',');
+			_putchar(' ');
+			a++;
+		}
 	}
 }
