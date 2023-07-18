@@ -27,7 +27,11 @@ void times_table(void)
 			if (mi == 9)
 				_putchar('\n');
 			else
+			{
+				_putchar(',');
 				_putchar(' ');
+				_putchar(' ');
+			}
 			mi++;
 		}
 		hrs++;
