@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - main
- * Description: fib
+ * Description: fib for even numpers
  * Return: 0
  */
 int main(void)
@@ -17,6 +17,6 @@ int main(void)
 		if (m % 2 == 0)
 			sum += m;
 	}
-	printf("%ul\n", sum);
+	printf("%lu\n", sum);
 	return (0);
 }
