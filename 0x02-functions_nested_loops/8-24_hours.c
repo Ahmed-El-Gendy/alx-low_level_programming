@@ -20,7 +20,7 @@ void jack_bauer(void)
 		{
 			_putchar('0' + (mi / 10));
 			_putchar('0' + (mi % 10));
-			min++;
+			mi++;
 		}
 	}
 }
