@@ -2,10 +2,10 @@
 
 /**
  * print_square - print ('\') n times diagonaly
- * @n : the size of ('#') square
+ * @size : the size of ('#') square
  * Return: null
  */
-void print_diagonal(int n)
+void print_diagonal(int size)
 {
 	int l = 0;
 	int z;
