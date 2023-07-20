@@ -1,5 +1,0 @@
-#!/bin/bash
-
-read -p "Enter File: " FILE
-
-betty $FILE
