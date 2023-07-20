@@ -11,18 +11,19 @@ void more_numbers(void)
 
 	for (d = 0; d < 10; d++)
 	{
-		bool f = false;
+		int f = 0;
 
 		for (c = 0; c <= 9 ; c++)
 		{
-			if (c == 4 && f)
+			if (c == 5 && f == 1)
 			{
 				break;
 			}
 			else
 			{
 				_putchar(c + 48);
-				f = true;
+				if (c == 5)
+					f = 1;
 			}
 			if (c == 9)
 				c = 0;
