@@ -23,7 +23,7 @@ void print_triangle(int n)
 		while (c >= 0)
 		{
 			_putchar('\\');
-			c--
+			c--;
 		}
 		_putchar('\n');
 		l++;
