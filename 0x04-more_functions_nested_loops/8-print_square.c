@@ -2,7 +2,7 @@
 
 /**
  * print_square - check for a digit
- * @n : number of _ to be printed
+ * @n : number of # size to be printed
  * Return:void
  */
 void print_square(int n)
@@ -12,7 +12,7 @@ void print_square(int n)
 	while (i < n && n > 0)
 	{
 		z = 0;
-		while (ii < n)
+		while (z < n)
 		{
 			_putchar('#');
 			z++;
