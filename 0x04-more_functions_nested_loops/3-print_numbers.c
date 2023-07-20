@@ -12,4 +12,5 @@ int print_numbers(void)
 	{
 		_putchar(c + 48);
 	}
+	_putchar('\n');
 }
