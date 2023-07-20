@@ -26,9 +26,9 @@ int main(void)
 		}
 		else
 		{
-			printf("%d", i);
+			printf("%i", i);
 		}
-		if (i < 99)
+		if (i < 100)
 			_putchar(' ');
 	}
 	_putchar('\n');
