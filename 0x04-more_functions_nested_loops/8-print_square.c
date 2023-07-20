@@ -18,7 +18,8 @@ void print_diagonal(int n)
 			_putchar('#');
 			z++;
 		}
-		_putchar('\n');
+		if (l < n - 1)
+			_putchar('\n');
 		l++;
 	}
 	if (l == 0)
