@@ -26,9 +26,10 @@ void more_numbers(void)
 			}
 			if (c == 9)
 				c = 0;
-	}	}
-	_putchar('\n');
+		}
+		_putchar('\n');
+	}
+}
 /*
  * just with 2 put_char
- */
-}
+*/
