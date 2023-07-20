@@ -1,26 +1,27 @@
 #include "main.h"
 
 /**
- * print_square - print ('#') n times diagonaly
- * @size : the size of ('#') square
- * Return: null
+ * print_square - check for a digit
+ * @n : number of _ to be printed
+ * Return:void
  */
-void print_square(int size)
+void print_square(int n)
 {
-	int l = 0;
-	int z;
+	int i = 0, z;
 
-	while (l < n && n > 0)
+	while (i < n && n > 0)
 	{
 		z = 0;
-		while (z < n)
+		while (ii < n)
 		{
 			_putchar('#');
 			z++;
 		}
+
 		_putchar('\n');
-		l++;
+		i++;
 	}
-	if (l == 0)
+	if (i == 0)
 		_putchar('\n');
+
 }
