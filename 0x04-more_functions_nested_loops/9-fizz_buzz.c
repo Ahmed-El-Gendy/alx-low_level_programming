@@ -1,10 +1,8 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
  * main - check for a digit
- * @n : number of # size to be printed
- * Return:void
+ * Return: 0
  */
 int main(void)
 {
@@ -29,8 +27,8 @@ int main(void)
 			printf("%i", i);
 		}
 		if (i < 100)
-			_putchar(' ');
+			putchar(' ');
 	}
-	_putchar('\n');
+	putchar('\n');
 	return (0);
 }
