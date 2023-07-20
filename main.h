@@ -1,1 +1,0 @@
-_isupper(int c);
