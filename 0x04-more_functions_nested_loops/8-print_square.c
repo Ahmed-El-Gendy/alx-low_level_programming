@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * print_square - print ('\') n times diagonaly
+ * print_square - print ('#') n times diagonaly
  * @size : the size of ('#') square
  * Return: null
  */
-void print_diagonal(int size)
+void print_square(int size)
 {
 	int l = 0;
 	int z;
