@@ -33,12 +33,14 @@ void print_number(int n)
 		int is = 1;
 
 		while (numd--)
-			is *= 10;
+		{
+			is = is * 10;
+		}
 
 		while (is > 0)
 		{
-			_putchar('0' + (x / numd));
-			x -= (x / is) / is;
+			_putchar('0' + (x / is));
+			x = x - ((x / is) * is);
 			is /= 10;
 		}
 	}
