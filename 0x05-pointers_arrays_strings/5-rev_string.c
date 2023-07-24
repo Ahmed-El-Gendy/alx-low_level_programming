@@ -19,7 +19,7 @@ void rev_string(char *s)
 		}
 	}
 	h = i / 2;
-
+	i--;
 	while (h--)
 	{
 		char c;
