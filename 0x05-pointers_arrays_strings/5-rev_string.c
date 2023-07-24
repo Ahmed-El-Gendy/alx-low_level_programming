@@ -8,6 +8,7 @@
 void rev_string(char *s)
 {
 	int i;
+	int h;
 	int k = 0;
 
 	for (i = 0;; i++)
@@ -17,12 +18,9 @@ void rev_string(char *s)
 			break;
 		}
 	}
+	h = i / 2;
 
-	int hh;
-
-	hh = i / 2;
-
-	while (hh--)
+	while (h--)
 	{
 		char c;
 
