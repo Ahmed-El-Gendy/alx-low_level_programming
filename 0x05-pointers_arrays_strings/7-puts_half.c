@@ -5,7 +5,7 @@
  * @str:  is the string that will use for the argument of the function
  * Return: NULL
  */
-void puts2(char *str)
+void puts_half(char *str)
 {
 	int i;
 	int v;
