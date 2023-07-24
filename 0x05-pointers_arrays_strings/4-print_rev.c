@@ -5,7 +5,7 @@
  * @s:  is the string that will use for the argument of the function
  * Return: NULL
  */
-void _puts(char *s)
+void print_rev(char *s)
 {
 	int i;
 
