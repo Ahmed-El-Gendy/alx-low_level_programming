@@ -2,16 +2,16 @@
 
 /**
  * print_rev - function that prints a string, in reverse
- * @str:  is the string that will use for the argument of the function
+ * @s:  is the string that will use for the argument of the function
  * Return: NULL
  */
-void _puts(char *str)
+void _puts(char *s)
 {
 	int i;
 
 	for (i = 0;; i++)
 	{
-		if (str[i] == '\0')
+		if (s[i] == '\0')
 		{
 			break;
 		}
@@ -21,7 +21,7 @@ void _puts(char *str)
 
 	while (i--)
 	{
-		_putchar(str[i]);
+		_putchar(s[i]);
 	}
 
 	_putchar('\n');
