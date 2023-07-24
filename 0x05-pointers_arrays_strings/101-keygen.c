@@ -4,9 +4,8 @@
 
 /**
  * main - program that generates random valid
- * passwords for the program 101-crackme
- *
- * Return: Always 0 (Success)
+ * passwords for the program
+ * Return: 0
  */
 int main(void)
 {
@@ -14,9 +13,7 @@ int main(void)
 	int pass[100];
 
 	sum = 0;
-
 	srand(time(NULL));
-
 	for (i = 0; i < 100; i++)
 	{
 		pass[i] = rand() % 50;
