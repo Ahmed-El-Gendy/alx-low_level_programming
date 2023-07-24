@@ -8,6 +8,7 @@
 void puts2(char *str)
 {
 	int i;
+	int v;
 
 	for (i = 0;; i++)
 	{
@@ -17,7 +18,7 @@ void puts2(char *str)
 		}
 	}
 
-	int v = i / 2;
+	v = i / 2;
 
 	while (i > v)
 	{
