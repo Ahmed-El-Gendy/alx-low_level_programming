@@ -18,7 +18,9 @@ void rev_string(char *s)
 		}
 	}
 
-	while (i >= 0)
+	int h = i / 2;
+
+	while (h--)
 	{
 		char c;
 
