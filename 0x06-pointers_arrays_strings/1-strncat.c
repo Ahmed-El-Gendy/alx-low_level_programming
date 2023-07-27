@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _strncat - a function that prints half of a string, followed by a new line
- * @src:  is the string that will use for the argument of the function
- * @dest: is the string that will use for the argument of the function
+ * _strncat - concatenates n bytes of two strings
+ * @src:  is the string that will use for the argument
+ * @dest: is the string that will use for the argument
  * n: used integer
  * Return: String
  */
