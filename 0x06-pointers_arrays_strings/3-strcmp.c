@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *_strncpy - copy string
+ * _strcmp - compare string
  * @s1: pointer destination
  * @s2: pointer source
  * Return: value difference
