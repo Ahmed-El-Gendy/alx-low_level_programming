@@ -1,12 +1,13 @@
 #include "main.h"
 
 /**
- * _strncat - concatenates n bytes of two strings
- * @src:  is the string that will use for the argument
- * @dest: is the string that will use for the argument
- * n: used integer
- * Return: String
- */
+ * *_strncat - concatenates n bytes of two strings
+ * @dest: pointer destination
+ * @src: pointer source
+ * @n: number of bytes
+ * Return: string
+*/
+
 char *_strncat(char *dest, char *src, int n)
 {
 	int i, j;
@@ -19,6 +20,5 @@ char *_strncat(char *dest, char *src, int n)
 		dest[i + j] = src[j];
 	}
 	dest[i + j] = '\0';
-
 	return (dest);
 }
