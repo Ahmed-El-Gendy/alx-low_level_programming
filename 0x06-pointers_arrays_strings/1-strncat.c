@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strcat - a function that prints half of a string, followed by a new line
+ * _strncat - a function that prints half of a string, followed by a new line
  * @src:  is the string that will use for the argument of the function
  * @dest: is the string that will use for the argument of the function
  * n: used integer
