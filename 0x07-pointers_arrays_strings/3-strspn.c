@@ -10,13 +10,12 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i;
+	char *c;
 
 	i = 0;
 
 	while (*s++)
 	{
-		char *c = accept;
-
 		while (*c++)
 		{
 			if (*(c - 1) == *(s - 1))
@@ -24,9 +23,10 @@ unsigned int _strspn(char *s, char *accept)
 				i++;
 				break;
 			}
-			c++;
 		}
-
+		if (!(*--c))
+			break;
+		c = accept;
 	}
 	return (i);
 }
