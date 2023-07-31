@@ -5,7 +5,7 @@
  * @dest: pointer to array of characters
  * @src : pointer to array of characters
  * @n : the size of change characters
- * Return: pointer to array of characters
+ * Return: *dest
 */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
@@ -14,7 +14,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 
 	for (i = 0; i < n; i++)
 	{
-		dest[i] = src[i]
+		dest[i] = src[i];
 	}
 	return (dest);
 }
