@@ -1,16 +1,20 @@
 #include "main.h"
 
 /**
- * _print_rev_recursion - function that prits size of string
- * @ *s: ponter to string
- * Return : size of string
+ * factorial - function that return the factorial of numper
+ * @n : numper
+ * Return : fact of numper
  */
 
-int _strlen_recursion(char *s)
+int factorial(int n)
 {
-	if (*s == '\0')
+	if (n < 0)
 	{
-		return (0);
+		return (-1);
 	}
-	return (1 + _strlen_recursion(s + 1));
+	if (n == 1)
+	{
+		return (1);
+	}
+	return (n * factorial(n - 1));
 }
