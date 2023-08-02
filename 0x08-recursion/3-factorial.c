@@ -3,7 +3,7 @@
 /**
  * factorial - function that return the factorial of numper
  * @n : numper
- * Return : fact of numper
+ * Return: fact of numper
  */
 
 int factorial(int n)

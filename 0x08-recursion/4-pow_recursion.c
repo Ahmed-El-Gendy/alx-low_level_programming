@@ -2,9 +2,9 @@
 
 /**
  * _pow_recursion - function that return the power of numper
- * @x : numper
- * @y : the power
- * Return : pow(x,y)
+ * @x: numper
+ * @y: the power
+ * Return:pow(x,y)
  */
 
 int _pow_recursion(int x, int y)
