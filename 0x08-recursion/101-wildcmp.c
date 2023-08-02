@@ -2,8 +2,8 @@
 
 /**
  * wildcmp - function that return if string is similar or not
- * @ *s1 : the string
- * @ *s2 : the string
+ * @*s1 : the string
+ * @*s2 : the string
  * Return: 1 if wild 0 if not
  */
 
