@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
- * _memcpy - function copies n bytes from src to dest
+ * *_memcpy - function copies n bytes from src to dest
  * @dest: pointer to array of characters
  * @src: pointer to array of characters
  * @n: the size of change characters
+ * @s: int
  * Return: *dest
 */
 
