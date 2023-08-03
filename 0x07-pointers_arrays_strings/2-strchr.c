@@ -3,7 +3,7 @@
 /**
  * _strchr - Returns a pointer to the first occurrence of the character c
  * @s: pointer to array of characters
- * @c : the char
+ * @c: the char
  * Return: first occurrence
 */
 

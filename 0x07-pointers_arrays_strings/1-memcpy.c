@@ -3,8 +3,8 @@
 /**
  * _memcpy - function copies n bytes from src to dest
  * @dest: pointer to array of characters
- * @src : pointer to array of characters
- * @n : the size of change characters
+ * @src: pointer to array of characters
+ * @n: the size of change characters
  * Return: *dest
 */
 
