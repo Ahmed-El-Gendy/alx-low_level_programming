@@ -9,17 +9,25 @@
 
 int main(int argc, char *argv[])
 {
-	int i, val = 1;
+	int i, sum;
 
-	if (argc != 3)
+	if (argc < 3)
 	{
-		printf("Error\n");
-		return (1);
+		printf("0\n");
+		return (0);
 	}
-	for (i = 1; i < argc; i++)
+	while (argc-- && argc >0)
 	{
-		val += atoi(argv[i]);
+		for (i = 0; argv[argc][i] != '\0'; i++)
+		{
+			if (!(isdigit(argv[argc][i])))
+			{
+				printf("Error\n");
+				return (1);
+			}
+		}
+		sum += atoi(argv[argc]);
 	}
-	printf("%d\n", val);
-	return (0);
+	printf("%d\n", sum);
+	return (sum);
 }
