@@ -17,7 +17,6 @@ char *_strdup(char *str)
 	{
 		i++;
 	}
-	i++;
 
 	if (!str)
 	{
@@ -29,6 +28,9 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
+
+	i++;
+
 	for (j = 0; j <= i; j++)
 	{
 		ar[j] = str[j];
