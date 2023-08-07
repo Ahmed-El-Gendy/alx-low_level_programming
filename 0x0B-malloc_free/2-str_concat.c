@@ -18,14 +18,6 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
-	if (!s1)
-	{
-		return (s2);
-	}
-	if (!s2)
-	{
-		return (s1);
-	}
 
 	while (s1[i] != '\0')
 		i++;
