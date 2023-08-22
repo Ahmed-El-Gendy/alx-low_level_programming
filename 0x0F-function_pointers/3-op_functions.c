@@ -7,7 +7,7 @@
  * @b: int
  * Return: int
  */
-op_add(int a, int b)
+int op_add(int a, int b)
 {
 	return (a + b);
 }
