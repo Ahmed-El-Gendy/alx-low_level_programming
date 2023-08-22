@@ -1,7 +1,5 @@
-#include "3-calc.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include <string.h>
 
 /**
  * op_add - add two numpers
@@ -9,7 +7,6 @@
  * @b: int
  * Return: int
  */
-
 op_add(int a, int b)
 {
 	return (a + b);
@@ -21,7 +18,6 @@ op_add(int a, int b)
  * @b: int
  * Return: int
  */
-
 int op_sub(int a, int b)
 {
 	return (a - b);
