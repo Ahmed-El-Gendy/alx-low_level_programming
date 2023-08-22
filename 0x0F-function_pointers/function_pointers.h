@@ -1,5 +1,5 @@
-#ifdef FILE_POINTERS
-#define FILE_POINTERS
+#ifdef FILE_F_POINTERS
+#define FILE_F_POINTERS
 
 #include <stdio.h>
 #include <stdlib.h>
