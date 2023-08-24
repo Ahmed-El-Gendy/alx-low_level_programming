@@ -6,6 +6,7 @@
 /**
  * add_node - add node to the end of list
  * @head: pointer to head
+ * @str: string
  * Return: size
  */
 
