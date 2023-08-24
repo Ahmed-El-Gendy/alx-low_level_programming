@@ -4,22 +4,19 @@
 #include "lists.h"
 
 /**
- * add_node_end - add node to the end of list
+ * free_list - free the list
  * @head: pointer to head
- * @str: string
- * Return: size
+ * Return: void
  */
-
-list_t *add_node_end(list_t **head, const char *str)
+void free_list(list_t *head)
 {
-        list_t *h = *head;
+	list_t *h = head;
 
-        while (h->next)
-        {
-                h = h->next;
-                free(head);
-                head = h;
-        }
-        free(h)
+	while (h)
+	{
+		*h = *head;
+		head = head->next;
+		free(h);
+	}
+	free(head);
 }
-
