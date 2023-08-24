@@ -4,13 +4,12 @@
 #include "lists.h"
 
 /**
- * add_node_end - add node to the end of list
- * @head: pointer to head
- * @str: string
- * Return: size
+ * free_list - free list
+ * @head: the head of list
+ * Return: void
  */
 
-list_t *add_node_end(list_t **head, const char *str)
+void free_list(list_t *head)
 {
 	list_t *node;
 	unsigned int len = 0;
