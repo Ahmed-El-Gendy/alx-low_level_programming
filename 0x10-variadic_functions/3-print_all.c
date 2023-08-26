@@ -12,13 +12,13 @@
 void print_all(const char * const format, ...)
 {
 	va_list args;
-	int i;
+	int i = 0;
 	char *s = "", *st;
 
 	va_start(args, format);
 	if (format)
 	{
-	for (i = 0; format[i] != '\0'; i++)
+	while (format[i])
 	{
 		switch (format[i])
 		{
@@ -39,9 +39,10 @@ void print_all(const char * const format, ...)
 				printf("%s%s", s, st);
 				break;
 			default:
-			continue;
+			break;
 		}
 		s = ", ";
+		i++;
 	}
 	}
 	printf("\n");
