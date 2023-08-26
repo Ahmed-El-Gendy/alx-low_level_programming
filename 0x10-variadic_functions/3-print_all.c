@@ -16,7 +16,8 @@ void print_all(const char * const format, ...)
 	char *s = "", *st;
 
 	va_start(args, format);
-
+	if (format)
+	{
 	for (i = 0; format[i]; i++)
 	{
 		switch (format[i])
@@ -41,6 +42,7 @@ void print_all(const char * const format, ...)
 			continue;
 		}
 		s = ", ";
+	}
 	}
 	printf("\n");
 	va_end(args);
