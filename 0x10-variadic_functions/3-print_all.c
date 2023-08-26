@@ -18,7 +18,7 @@ void print_all(const char * const format, ...)
 	va_start(args, format);
 	if (format)
 	{
-	for (i = 0; format[i]; i++)
+	for (i = 0; format[i] != '\0'; i++)
 	{
 		switch (format[i])
 		{
