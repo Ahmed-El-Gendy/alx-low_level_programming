@@ -8,8 +8,9 @@
 
 size_t print_listint(const listint_t *h)
 {
-	size_t nodes = 0;
 	const listint_t *t;
+
+	size_t nodes = 0;
 
 	t = h;
 	while (t)
