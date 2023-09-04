@@ -26,10 +26,9 @@ ssize_t _strlen(const char *str)
  */
 int create_file(const char *filename, char *text_content)
 {
-	ssize_t b_written;
-	ssize_t fd;
+	ssize_t wr, fd;
 
-	b_written = 0;
+	wr = 0;
 
 	if (!filename)
 	{
@@ -46,12 +45,12 @@ int create_file(const char *filename, char *text_content)
 
 	if (text_content)
 	{
-		b_written = write(fd, text_content, _strlen(text_content));
+		wr = write(fd, text_content, _strlen(text_content));
 	}
 
 	close(fd);
 
-	if (b_written == -1)
+	if (wr == -1)
 		return (-1);
 	else
 		return (1);
