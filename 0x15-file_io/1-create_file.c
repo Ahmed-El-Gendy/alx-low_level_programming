@@ -51,7 +51,7 @@ int create_file(const char *filename, char *text_content)
 
 	close(fd);
 
-	if (b_written == -1 0)
+	if (b_written == -1)
 		return (-1);
 	else
 		return (1);
