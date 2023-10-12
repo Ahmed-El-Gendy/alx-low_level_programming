@@ -2,7 +2,7 @@
 
 /**
  * add_dnodeint - add node to begin
- * @h: head
+ * @head: head
  * @n: value
  * Return: list
  */
