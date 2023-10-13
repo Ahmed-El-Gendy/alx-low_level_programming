@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
  * get_dnodeint_at_index - print index
- * @h: head
+ * @head: head
  * @index: the index of the numper
  * Return: list
  */
