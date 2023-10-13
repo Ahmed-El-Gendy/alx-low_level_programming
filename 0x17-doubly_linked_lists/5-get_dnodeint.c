@@ -7,7 +7,7 @@
  */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
-	int cnt;
+	unsigned int cnt;
 
 	cnt = 0;
 	while (head)
