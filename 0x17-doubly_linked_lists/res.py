@@ -8,4 +8,4 @@ for num1 in range(100, 1000):
             largest_palindrome = product
 
 with open("102-result", "w") as file:
-    file.write(str(largest_palindrome), end='')
+    print(largest_palindrome, end='', file=file)
