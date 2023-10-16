@@ -11,8 +11,9 @@ int div(int i, int k);
 * Return: sum
 */
 int add(int i, int k)
+{
 	return (i + k);
-
+}
 /**
 * sub - subtracts
 * @i: integer
@@ -20,8 +21,9 @@ int add(int i, int k)
 * Return: the subtract
 */
 int sub(int i, int k)
+{
 	return (i - k);
-
+}
 /**
 * mul - multiplies
 * @i: integer
@@ -29,8 +31,9 @@ int sub(int i, int k)
 * Return: multiple
 */
 int mul(int i, int k)
+{
 	return (i * k);
-
+}
 /**
 * div - divide
 * @i: integer
@@ -38,8 +41,9 @@ int mul(int i, int k)
 * Return: divide
 */
 int div(int i, int k)
+{
 	return (i / k);
-
+}
 /**
 * mod -modulus
 * @i: integer
