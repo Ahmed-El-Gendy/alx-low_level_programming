@@ -14,16 +14,15 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	if (!ht || !key || !value)
 		return (0);
-	index = hash_djb2((const unsigned char *)key) % ht->size, curr = ht->array[index];
+	index = hash_djb2((const unsigned char *)key) % ht->size;
+	curr = ht->array[index];
 	while (curr)
 	{
 		if (strcmp(curr->key, key) == 0)
 		{
 			free(curr->value), curr->value = strdup(value);
 			if (!curr->value)
-			{
 				return (0);
-			}
 			return (1);
 		}
 		curr = curr->next;
